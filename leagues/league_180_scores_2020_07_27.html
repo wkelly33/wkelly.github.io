@@ -1,0 +1,1156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Scoreboard: Monday, July 27th, 2020</title>
+<meta name="content-language" content="en-us">
+<meta name="content-type" content="text/html; charset=iso-8859-1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" type="text/css" href="../styles.css">
+<script src="../scripts/sorttable.js"></script>
+
+
+<script language="javascript" type="text/javascript">
+
+	function IsDate(_year, _month, _day) 
+	{
+		var month = _month * 1;
+		var day = _day * 1;
+		var year = _year * 1;
+		
+		if (month < 1 || month > 12) 
+		{ 
+			return false;
+		}
+		
+		if (day < 1 || day > 31) 
+		{
+			return false;
+		}
+		
+		if ((month==4 || month==6 || month==9 || month==11) && day==31) 
+		{
+			return false;
+		}
+		
+		if (month == 2) 
+		{
+			var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+			if (day > 29 || (day==29 && !isleap)) 
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	function go(url, which)
+	{
+		var y, m, d, x, box;
+		
+		box = document.forms[0].day;
+		d = box.options[box.selectedIndex].value;
+
+		box = document.forms[0].month;
+		m = box.options[box.selectedIndex].value;
+
+		box = document.forms[0].year;
+		y = box.options[box.selectedIndex].value;
+
+		if (IsDate(y, m, d))
+		{
+			if (which==1) x = d;
+			else if (which==2) x = m;
+			else if (which==3) x = y;
+		
+			if (which==1 && x.length==1) x="0"+x;
+			else if (which==2 && x.length==1) x="0"+x;
+			
+			rExp = /TOKEN/gi;
+			location.href = url.replace(rExp, x);
+		}
+	}
+
+</script>
+
+</head>
+
+<body class="ext_bg">
+
+<table cellspacing="0" cellpadding="0" align="center" width="968px">
+
+	<!-- OOTP IGNORE START LEAGUE HEADER -->
+	<tr>
+		<td>
+			<table border="0" width="968px" cellspacing="0" cellpadding="0" style="background-image:url(../images/report_header.jpg); background-repeat:no-repeat;">
+				<tr style="height:160px;">
+					<td align="left" valign="top" style="padding:4px 0px 0px 4px;"><a href="../leagues/league_180_home.html"><img src="../images/league_logos/dominican_rookie_league.png" border="0" title="Dominican Rookie League"></a></td>
+					<td valign="top">
+						<table width="648px" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td align="center" valign="top" style="padding-top:22px;">
+									<div class="reptitle">DOMINICAN ROOKIE LEAGUE</div>
+									<div class="repsubtitle">SCOREBOARD: MONDAY, JULY 27TH, 2020</div>
+									<div style="text-align:center; color:#FFFFFF; padding-top:4px;">05/20/2020</div>
+								</td>
+								<td><img src="../images/pixel.gif" width="1" height="138"></td>
+							</tr>
+							<tr>
+								<td align="center" valign="top" class="menu">
+									<a href="../index.html" class="menu">BNN Index</a>  |
+									<a href="../leagues/league_180_home.html" class="menu">DSL</a>  |
+									<a href="../leagues/league_180_scores.html" class="menu">SCORES</a>  |
+									<a href="../leagues/league_180_standings.html" class="menu">STANDINGS</a>  |
+									<a href="../leagues/league_180_stats.html" class="menu">STATS</a>  |
+									<a href="../leagues/league_180_teams.html" class="menu">TEAMS</a>  |
+									<a href="../leagues/league_180_players.html" class="menu">PLAYERS</a>  |
+									<a href="../leagues/league_180_transactions_0_0.html" class="menu">TRANSACTIONS</a>  |
+									<a href="../history/league_180_index.html" class="menu">HISTORY</a>
+								</td>
+								<td><img src="../images/pixel.gif" width="1" height="22"></td>
+							</tr>
+						</table>
+					</td>
+					<td>&#160;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<!-- OOTP IGNORE END LEAGUE HEADER -->
+
+	
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="968px">
+				<tr>
+					<td valign="top" style="padding:0px 0px 0px 4px;">
+						<form>
+							<select name="day" style="width:50px;" onChange="javascript:go('../leagues/league_180_scores_2020_07_TOKEN.html',1)">
+								<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27" selected="1">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+
+							</select>
+							<select name="month" style="width:110px;" onChange="javascript:go('../leagues/league_180_scores_2020_TOKEN_27.html',2)">
+								<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7" selected="1">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+
+							</select>
+							<select name="year" style="width:70px;" onChange="javascript:go('../leagues/league_180_scores_TOKEN_07_27.html',3)"> 
+								<option value="2020" selected="1">2020</option>
+
+							</select>
+						</form>
+					</td>					
+					<td align="right">
+						<table cellspacing="0" cellpadding="0" class="data">
+							<tr>
+								<th width="70" valign="top">Weekday</th>
+								<th class="dc" width="36px">Mon</th>
+<th class="dc" width="36px">Tue</th>
+<th class="dc" width="36px">Wed</th>
+<th class="dc" width="36px">Thu</th>
+<th class="dc" width="36px">Fri</th>
+<th class="dc" width="36px">Sat</th>
+<th class="dc" width="36px">Sun</th>
+<th class="dc grey" width="36px">Mon</th>
+<th class="dc" width="36px">Tue</th>
+<th class="dc" width="36px">Wed</th>
+<th class="dc" width="36px">Thu</th>
+<th class="dc" width="36px">Fri</th>
+<th class="dc" width="36px">Sat</th>
+<th class="dc" width="36px">Sun</th>
+<th class="dc" width="36px">Mon</th>
+
+							</tr>	
+							<tr>
+								<td width="60" class="dl" valign="top">Date</td>
+								<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_20.html">20</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_21.html">21</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_22.html">22</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_23.html">23</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_24.html">24</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_25.html">25</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_26.html">26</a></td>
+<td class="dc grey bold" width="36px">&#160;27&#160;</td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_28.html">28</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_29.html">29</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_30.html">30</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_07_31.html">31</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_08_01.html">1</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_08_02.html">2</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_180_scores_2020_08_03.html">3</a></td>
+
+							</tr>			
+							<tr>
+								<td width="60" class="dl">Games</td>
+								<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">0</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc grey bold">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+<td class="dc">23</td>
+
+							</tr>					
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>		
+				<table cellspacing="0" cellpadding="0" width="968px">
+		<tr><th colspan="2" class="boxtitle" style="padding:8px 0px 8px 4px;"></th></tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/texas_(dsl)_rangers_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/milwaukee_(dsl)_brewers_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">1:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_613.html">Texas (DSL) Rangers 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_620.html">Milwaukee (DSL) Brewers</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/new_york_n_(dsl)_mets_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/kansas_city_(dsl)_royals_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">1:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_587.html">New York N (DSL) Mets 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_586.html">Kansas City (DSL) Royals 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/miami_(dsl)_marlins_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/toronto_(dsl)_blue_jays_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">1:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_606.html">Miami (DSL) Marlins</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_617.html">Toronto (DSL) Blue Jays</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/new_york_a_(dsl)_yankees_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/houston_(dsl)_astros_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_599.html">New York A (DSL) Yankees 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_588.html">Houston (DSL) Astros</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/seattle_(dsl)_mariners_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/texas_(dsl)_rangers_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_589.html">Seattle (DSL) Mariners</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_585.html">Texas (DSL) Rangers 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/los_angeles_(dsl)_dodgers_guerrero_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/oakland_(dsl)_athletics_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_751.html">Los Angeles (DSL) Dodgers Guerrero</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_603.html">Oakland (DSL) Athletics</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/pittsburgh_(dsl)_pirates_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/chicago_a_(dsl)_white_sox_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_813.html">Pittsburgh (DSL) Pirates 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_593.html">Chicago A (DSL) White Sox</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/detroit_(dsl)_tigers_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/baltimore_(dsl)_orioles_2_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_616.html">Detroit (DSL) Tigers 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_974.html">Baltimore (DSL) Orioles 2</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/washington_(dsl)_nationals_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/kansas_city_(dsl)_royals_2_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_605.html">Washington (DSL) Nationals</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_812.html">Kansas City (DSL) Royals 2</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/cleveland_(dsl)_indians_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/colorado_(dsl)_rockies_2_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_975.html">Cleveland (DSL) Indians 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_792.html">Colorado (DSL) Rockies 2</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/los_angeles_(dsl)_angels_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/st_louis_(dsl)_cardinals_red_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_596.html">Los Angeles (DSL) Angels</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_607.html">St. Louis (DSL) Cardinals Red</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/san_diego_(dsl)_padres_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/cincinnati_(dsl)_reds_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_600.html">San Diego (DSL) Padres 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_594.html">Cincinnati (DSL) Reds</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/pittsburgh_(dsl)_pirates_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/arizona_(dsl)_diamondbacks_2_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_592.html">Pittsburgh (DSL) Pirates 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_753.html">Arizona (DSL) Diamondbacks 2</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/boston_(dsl)_red_sox_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/boston_(dsl)_red_sox_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_793.html">Boston (DSL) Red Sox 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_584.html">Boston (DSL) Red Sox 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/san_francisco_(dsl)_giants_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/san_francisco_(dsl)_giants_2_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_590.html">San Francisco (DSL) Giants 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_976.html">San Francisco (DSL) Giants 2</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/philadelphia_(dsl)_phillies_white_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/philadelphia_(dsl)_phillies_red_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_754.html">Philadelphia (DSL) Phillies White</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_595.html">Philadelphia (DSL) Phillies Red</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/st_louis_(dsl)_cardinals_blue_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/tampa_bay_(dsl)_rays_2_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_795.html">St. Louis (DSL) Cardinals Blue</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_755.html">Tampa Bay (DSL) Rays 2</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/baltimore_(dsl)_orioles_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/tampa_bay_(dsl)_rays_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_598.html">Baltimore (DSL) Orioles 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_597.html">Tampa Bay (DSL) Rays 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/atlanta_(dsl)_braves_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/new_york_n_(dsl)_mets_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_619.html">Atlanta (DSL) Braves</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_602.html">New York N (DSL) Mets 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/cleveland_(dsl)_indians_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/chicago_n_(dsl)_cubs_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_609.html">Cleveland (DSL) Indians 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_611.html">Chicago N (DSL) Cubs 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/detroit_(dsl)_tigers_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/los_angeles_(dsl)_dodgers_robinson_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_794.html">Detroit (DSL) Tigers 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_604.html">Los Angeles (DSL) Dodgers Robinson</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/arizona_(dsl)_diamondbacks_1_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/colorado_(dsl)_rockies_1_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_608.html">Arizona (DSL) Diamondbacks 1</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_601.html">Colorado (DSL) Rockies 1</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/chicago_n_(dsl)_cubs_2_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/minnesota_(dsl)_twins_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<td class="dl" colspan="2">7:05 PM ET</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_742.html">Chicago N (DSL) Cubs 2</a></td>
+						<td class="dl" width="210px">0-0, On Road: 0-0</td>
+					</tr>		
+					<tr>
+						<td class="dl" width="210px"><a href="../teams/team_591.html">Minnesota (DSL) Twins</a></td>
+						<td class="dl" width="210px">0-0, At Home: 0-0</td>
+					</tr>				
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+			
+		</td>
+	</tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top:8px;"><!-- OOTP IGNORE START PAGE FOOTER --><img src="../images/bnn_bottom_bar.jpg" border="0"><!-- OOTP IGNORE END PAGE FOOTER --></td>
+
+	</tr>	
+</table>
+
+<!-- OOTP IGNORE START PAGE BOTTOM -->
+<table cellspacing="0" cellpadding="0" align="center" width="968px">
+	
+	<tr>
+		<td style="padding-top:2px; font-size:11px; text-align:center;">
+			Thursday, May 7th, 2020 - OOTP Baseball 21.3 Build 48
+		</td>
+	</tr>	
+</table>
+<!-- OOTP IGNORE END PAGE BOTTOM -->
+
+
+</body>
+</html>
